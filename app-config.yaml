@@ -48,7 +48,7 @@ integrations:
     #   token: ${GHE_TOKEN}
   gitlab:
     - host: gitlab.com
-      token: gloas-699f68c7188f1c4119d08d7ba6e98131b3e3e2e5879421db27dd2252aaf56e8b  
+      token: {}
 
 proxy:
   ### Example for how to add a proxy endpoint for the frontend.
@@ -60,7 +60,7 @@ proxy:
   '/github' :
    target: 'https://api.github.com'
    headers: 
-     Authorization: 'token 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'
+     Authorization: {}
 
 # Reference documentation http://backstage.io/docs/features/techdocs/configuration
 # Note: After experimenting with basic setup, use CI/CD to generate docs
@@ -79,8 +79,8 @@ auth:
   providers: 
     gitlab:
       development:
-        clientId: 1d56cf0ecd848ab68ad74f026bf793725cbddd14453f2198cbedd2bb8dbf5321
-        clientSecret: db5248aef5f46dcdd729e81b4d55fc40911b52fa0e881157a5fe1e70a1b40e30  
+        clientId: {}
+        clientSecret: {}
 
 scaffolder:
   # see https://backstage.io/docs/features/software-templates/configuration for software template options
