@@ -57,6 +57,9 @@ import {
 
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
+import { EntityMyPluginCard
+  //EntityMyPluginContent 
+} from '@internal/plugin-my-plugin';
 
 const techdocsContent = (
   <EntityTechdocsContent>
@@ -134,6 +137,12 @@ const overviewContent = (
     <Grid item md={4} xs={12}>
       <EntityLinksCard />
     </Grid>
+
+    <Grid item md={4} xs={12}>
+      <EntityMyPluginCard />
+    </Grid>
+
+
     <Grid item md={8} xs={12}>
       <EntityHasSubcomponentsCard variant="gridItem" />
     </Grid>
@@ -183,6 +192,10 @@ const websiteEntityPage = (
     <EntityLayout.Route path="/" title="Overview">
       {overviewContent}
     </EntityLayout.Route>
+    
+    {/* <EntityLayout.Route path="/my-plugin" title="My Plugin">
+      {EntityMyPluginContent}
+    </EntityLayout.Route> */}
 
     <EntityLayout.Route path="/ci-cd" title="CI/CD">
       {cicdContent}
